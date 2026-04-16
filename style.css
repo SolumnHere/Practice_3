@@ -1,0 +1,73 @@
+:root {
+    --primary-background-color: rgba(12, 90, 226);
+    --secondary-background-color: rgba(0, 82, 154);
+    --sub-color: rgba(255, 204, 115);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    line-height: 1.5;
+
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--secondary-background-color);
+}
+
+.bar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.bar-group {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.bar-group p {
+    margin: 0;          
+    padding-right: 10px; 
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    display: block;
+    width: 12px;
+    height: auto;
+    transform: rotate(90deg);
+    filter: invert(100%) brightness(100%);
+}
+
+.bar-container a {
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.cougerweb {
+    display: block;
+    background-color: var(--primary-background-color);
+}
+
+.bar-container a.apply {
+    color: black;
+    background-color: var(--sub-color);
+}
