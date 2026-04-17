@@ -20,20 +20,20 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-.bar-container {
+.bar__container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 10px;
 }
 
-.bar-group {
+.bar__group {
     display: flex;
     align-items: center;
     gap: 0;
 }
 
-.bar-group p {
+.bar__group p {
     margin: 0;          
     padding-right: 10px; 
 }
@@ -55,7 +55,7 @@ button img {
     filter: invert(100%) brightness(100%);
 }
 
-.bar-container a {
+.bar__container a {
     text-decoration: none;
     color: white;
     padding: 0 30px;
@@ -67,7 +67,13 @@ button img {
     background-color: var(--primary-background-color);
 }
 
-.bar-container a.apply {
+.bar__container a.apply {
     color: black;
     background-color: var(--sub-color);
+}
+
+.header-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
