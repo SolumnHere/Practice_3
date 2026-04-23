@@ -46,7 +46,7 @@ body {
 .bar__container a {
     display: flex;
     align-items: center; 
-    padding: 0 40px;
+    padding: 0 30px;
     text-decoration: none;
     color: white;
 }
@@ -58,8 +58,7 @@ body {
 }
 
 .bar__group p {
-    margin: 0;          
-    padding-right: 10px; 
+    margin: 0 auto;          
 }
 
 .utility-bar-link {
@@ -224,6 +223,7 @@ body {
 .quick-link {
     position: relative;
     width: 100%;
+    padding-bottom: 150px;
 }
 
 .quick-link-contain {
@@ -236,7 +236,6 @@ body {
 
     justify-content: center;
     background-color: white;
-    position: absolute;
     padding: 40px 48px;
     gap: 20px;
 
@@ -287,4 +286,49 @@ body {
     background-image: url("icons/right-arrow.png");
     background-size: contain;
     filter: invert(14%) sepia(91%) saturate(2852%) hue-rotate(202deg) brightness(91%) contrast(105%);
+}
+
+
+/* Feature */
+
+.feature {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 48px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Larken', Georgia, Cambria, 'Times New Roman', ui-serif, serif;
+    font-size: clamp(1.7rem, calc(1.8rem + 1vw), 3rem); 
+    font-weight: 400;
+    color: white;
+    flex: 1;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 40px 0 0 ;
+    
+}
+
+li > a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.5rem;
+
+    text-align: center;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0,0, 0.2);
+
+    width: 100%;
+    height: 100%;
 }
