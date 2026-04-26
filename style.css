@@ -581,3 +581,29 @@ body {
     }
 }
 
+.feed-section {
+    background-color: rgb(234, 234, 234);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.feed-article-container {
+    display: grid;
+}
+
+.feed-article-container a img{
+    width: 20px;
+}
+
+.feed-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;    
+    position: relative;
+    align-items: stretch;
+
+}
+
+.feed-image img {
+    width: 100px;
+}
