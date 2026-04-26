@@ -465,7 +465,7 @@ body {
     padding: 48px;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                        url(icons/abstract-luxury-white-and-grey-wave-shape-with-gold-stripes-lines-background-free-vector.webp);
+                        url(icons/abstract-graphic.png);
     background-size: cover;
     background-position: center;
 
@@ -580,3 +580,4 @@ body {
         }
     }
 }
+
