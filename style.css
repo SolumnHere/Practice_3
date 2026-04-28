@@ -581,29 +581,111 @@ body {
     }
 }
 
+/* Feed section */
+
 .feed-section {
     background-color: rgb(234, 234, 234);
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 auto;
+
+    .feed-article-container {
+        display: grid;
+        /* margin: 72px 0; */
+        padding: 0 48px;
+
+        .feed-header {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            grid-template-columns: 1fr auto;
+            padding: 0 0 40px;
+
+            h2 {
+                color: var(--primary-background-color);
+                font-size: clamp(1.7rem, calc(1.8rem + 1vw), 3rem);
+                font-weight: 500;
+                font-family: 'Larken', Georgia, Cambria, 'Times New Roman', ui-serif, serif;
+            }
+
+            a {
+                display: flex;
+                width: fit-content;
+                align-items: center;
+                justify-content: space-between;
+                background-color: var(--primary-background-color);
+                color: white;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.1rem;
+                text-decoration: none;
+
+                border-radius: 10px;
+                border: 0;
+                margin: 16px 0 0 0;
+                padding: 8px 20px;
+                cursor: pointer;
+
+                img {
+                transform: rotate(-90deg);
+                filter: invert(100%) brightness(100%);
+                width: 25px;
+                }
+            }
+        }
+    }
 }
 
-.feed-article-container {
+
+
+.article-list {
     display: grid;
-}
-
-.feed-article-container a img{
-    width: 20px;
-}
-
-.feed-article {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;;    
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-rows: 1fr;    
     position: relative;
     align-items: stretch;
 
+    gap: 30px;
+
+    .feed-article {
+        transition: opacity 0.2s ease-in-out;
+
+        img {
+            display: block;
+            min-height: 100px;
+            position: relative;
+            top: -1px;
+            width: 100%;
+            aspect-ratio: 16 / 11;
+            
+            border-radius: 10px;
+        }
+
+        .feed-image-date {
+            position: absolute;
+            top: 69%;
+            left: 3%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+            text-align: left;
+            line-height: 70px; 
+            width: fit-content;
+
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        .feed-data {
+            background-color: white;
+            border-radius: 10px;
+            p {
+                color: var(--primary-background-color);
+            }
+
+            span {
+                color: var(--secondary-background-color);
+            }
+        }
+    }
 }
 
-.feed-image img {
-    width: 100px;
-}
+
+
