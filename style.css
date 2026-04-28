@@ -462,9 +462,9 @@ body {
 /* Instruction */
 
 .instruction {
-    padding: 48px;
+    padding: 72px 48px;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgb(255, 255, 255, 0.9)),
                         url(icons/abstract-graphic.png);
     background-size: cover;
     background-position: center;
@@ -584,13 +584,14 @@ body {
 /* Feed section */
 
 .feed-section {
-    background-color: rgb(234, 234, 234);
+    background-color: rgba(232, 239, 246);
     box-sizing: border-box;
 
     .feed-article-container {
         display: grid;
-        /* margin: 72px 0; */
+    
         padding: 0 48px;
+        margin: 72px 0 ;
 
         .feed-header {
             display: grid;
@@ -600,7 +601,7 @@ body {
             padding: 0 0 40px;
 
             h2 {
-                color: var(--primary-background-color);
+                color: rgba(5, 47, 96);
                 font-size: clamp(1.7rem, calc(1.8rem + 1vw), 3rem);
                 font-weight: 500;
                 font-family: 'Larken', Georgia, Cambria, 'Times New Roman', ui-serif, serif;
@@ -631,61 +632,90 @@ body {
                 }
             }
         }
+
+        .article-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;    
+            grid-template-rows: 1fr;    
+            align-items: stretch;
+
+            gap: 30px;
+
+            .feed-article {
+                position: relative;
+                transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+                box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                
+                &:hover{
+                    box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-5px);    
+                }
+
+                img {
+                    display: block;
+                    height: 350px;
+                    top: -1px;
+                    width: 100%;
+                    aspect-ratio: 16 / 11;
+                    object-fit: cover;
+                    border-radius: 10px 10px 0 0;  
+                }
+
+                .feed-image-date {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 13%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2; 
+                    text-align: left;
+                    line-height: 1.2; 
+                    white-space: wrap;
+                    width: 70px;
+                    white-space: normal;
+                    text-align: center;
+
+                    background-color: #00539BE0;
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                    font-size: 1.3rem;
+                }
+
+                .feed-data {
+                    display: block;
+                    background-color: white;
+                    border-radius: 10px;                    
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(0%, -20%);
+                    z-index: 1;
+                    margin: -16px 0 0;
+                    padding: 24px;
+
+                    border: 2px solid #00539B;
+                    border-bottom: 4px solid #00539B;
+
+                    p {
+                        color: var(--primary-background-color);
+                        font-size: 1.3rem;
+                        line-height: 1.4;
+                    }
+
+                    span {
+                        display: flex;
+                        color: var(--secondary-background-color);
+                        margin: 16px 0 0;
+                        align-items: center;
+
+                    }
+                }
+            }
+        }
+
     }
 }
 
-
-
-.article-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;    
-    grid-template-rows: 1fr;    
-    position: relative;
-    align-items: stretch;
-
-    gap: 30px;
-
-    .feed-article {
-        transition: opacity 0.2s ease-in-out;
-
-        img {
-            display: block;
-            min-height: 100px;
-            position: relative;
-            top: -1px;
-            width: 100%;
-            aspect-ratio: 16 / 11;
-            
-            border-radius: 10px;
-        }
-
-        .feed-image-date {
-            position: absolute;
-            top: 69%;
-            left: 3%;
-            transform: translate(-50%, -50%);
-            z-index: 2; 
-            text-align: left;
-            line-height: 70px; 
-            width: fit-content;
-
-            background-color: blue;
-            border-radius: 10px;
-        }
-
-        .feed-data {
-            background-color: white;
-            border-radius: 10px;
-            p {
-                color: var(--primary-background-color);
-            }
-
-            span {
-                color: var(--secondary-background-color);
-            }
-        }
-    }
-}
 
 
 
