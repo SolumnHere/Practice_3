@@ -723,7 +723,7 @@ body {
     display: grid;
     
     grid-template-rows: 2fr;
-    background-color: rgba(232, 238, 247);
+    background-color: white;
     padding: 0 48px;
     margin: 72px 0 ;
 
@@ -731,12 +731,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0;
 
         h3 {
             color: var(--primary-background-color);
             font-family: "Atkinson Hyperlegible", sans-serif;
             font-weight: 600;
-            font-size: 2    rem;
+            font-size: 2rem;
         }
 
         a {
@@ -764,14 +765,43 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 40px;
+        margin: 40px 0 0;
 
         a {
-            display: block;
+            display: inline-flex;
             border-radius: 10px;
             padding: 20px;
             text-decoration: none; 
             border: 2px solid #00539B;
             border-bottom: 4px solid #00539B;
+
+            time {
+                display: flex;             
+                text-align: center;
+
+                color: white;
+                align-items: center;
+                width: fit-content;
+                border-radius: 10px;
+                padding: 10px 15px;
+                font-size: 2rem;
+                background-color: #00539B;
+            }
+
+            .event-info{
+                display: grid;
+                padding: 0 0 0 24px;
+
+                h3 {
+                    padding: 0 0 16px;
+                }
+
+                p {
+                    font-size: 1.15rem;
+                    
+                    
+                }
+            }
         }
     }
 }
