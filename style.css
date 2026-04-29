@@ -673,7 +673,6 @@ body {
                     line-height: 1.2; 
                     white-space: wrap;
                     width: 70px;
-                    white-space: normal;
                     text-align: center;
 
                     background-color: #00539BE0;
@@ -724,7 +723,7 @@ body {
     
     grid-template-rows: 2fr;
     background-color: white;
-    padding: 0 48px;
+    padding: 0 48px 20px;
     margin: 72px 0 ;
 
     .event-header {
@@ -768,24 +767,34 @@ body {
         margin: 40px 0 0;
 
         a {
-            display: inline-flex;
+            display: flex;
             border-radius: 10px;
             padding: 20px;
             text-decoration: none; 
             border: 2px solid #00539B;
             border-bottom: 4px solid #00539B;
-
+            
             time {
-                display: flex;             
+                display: inline-flexbox;
+                height: fit-content; 
+                flex-direction: column;            
                 text-align: center;
-
+                
                 color: white;
-                align-items: center;
-                width: fit-content;
                 border-radius: 10px;
                 padding: 10px 15px;
                 font-size: 2rem;
                 background-color: #00539B;
+
+                .card-month {
+                    display: block;
+                    font-size: 1.25rem;
+                }
+
+                .card-day {
+                    margin: 0 0 8px;
+                    font-size: 3rem;
+                }
             }
 
             .event-info{
