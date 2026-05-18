@@ -1,0 +1,129 @@
+.hero-article-contain {
+    background-color: white;
+    color: rgba(5, 47, 97);
+    margin: 0 50px;
+    padding: 80px 200px 0;
+
+
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 20px;
+        font-family: 'Larken', Georgia, Cambria, 'Times New Roman', ui-serif, serif;
+    }
+
+    .hero-article {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        p {
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            font-weight: 100;
+            margin: 0 16px 0 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fdc126;
+                margin-right: 15px;
+                flex-shrink: 0;
+            }
+        } 
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.3rem;
+        transition: color 0.3s ease;
+        margin: 24px 0;
+
+        &:hover {
+            color: rgba(12, 90, 228);
+        
+        }
+
+        img {
+            width: 12px;
+            transform: rotate(180deg);
+            margin-right: 8px;
+            filter: invert(14%) sepia(91%) saturate(2852%) hue-rotate(202deg) brightness(91%) contrast(105%);
+        }
+    }
+}
+
+.news-content {
+    color: rgba(5, 47, 97);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px 0 150px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 25px;
+
+    .news-container {
+        margin: 0 0 20px;
+        padding: 0 150px;
+
+        .main-img {
+            width: 100%;
+            margin: 0 0 72px;
+            border-radius: 15px; 
+        }
+
+        .caption {
+            margin: 0 0 16px;
+        }
+
+        .track {
+            margin-bottom: 50px;
+        }
+
+        a {
+            color: rgba(5, 47, 97, 1);
+            text-decoration: underline;
+
+            &:hover {
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
+
+        .dropcap {
+            font-size: 5.5rem;
+            float: left;
+            line-height: 0.8;
+            margin-top: 6px;
+            margin-right: 8px;
+            font-weight: bold;
+            color: rgba(5, 47, 97, 1);
+        }
+
+        .back-link {
+            display: block;
+            padding: 24px 0;
+            border-top: 3px solid rgba(238, 241, 242);
+            text-decoration: none;    
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+
+            img {
+                width: 12px;
+                transform: rotate(180deg);
+                margin-right: 8px;
+                filter: invert(14%) sepia(91%) saturate(2852%) hue-rotate(202deg) brightness(91%) contrast(105%);
+            }
+
+            &:hover {
+                color: rgba(12, 90, 228);
+            
+            }
+        }
+    }
+}
