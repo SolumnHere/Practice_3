@@ -36,8 +36,6 @@ btn.addEventListener('click', () => {
     }
 }); 
 
-
-
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
         buttons.forEach(btn => btn.classList.remove('active'));
@@ -46,3 +44,28 @@ buttons.forEach((button, index) => {
         contents[index].classList.add('active');
     });
 });
+
+document.querySelectorAll('.location-link').forEach(link =>
+    link.addEventListener('click', function(event){
+        event.preventDefault();
+
+        document.querySelectorAll('.location-link').forEach(item =>
+            item.classList.remove('active')
+        )
+
+        this.classList.add('active')
+
+        const newImgSrc = this.getAttribute('data-image')
+        const featuredImage = document.getElementById('featured-image')
+
+        if (featuredImage && newImgSrc) {
+            featuredImage.src = newImgSrc
+        }
+    })
+)
+
+const defaultActiveLink = document.querySelector('.location-link.active')
+if (defaultActiveLink) {
+    defaultActiveLink.click()
+}
+

@@ -22,13 +22,13 @@
                 <a href="#">Visit</a>   
                 <a href="#">Give</a>
                 <a href="#">Translate</a>
-                <a href="CougerWeb.html" class="utility-bar-link ">CougerWeb</a>
+                <a href="CougarWeb.html" class="utility-bar-link ">CougarWeb</a>
                 <a href="#" class="utility-bar-link ">Apply</a>
             </div>
         </div>
 
         <div class="header-contain">
-            <a href="main.html">
+            <a href="index.html">
                 <img src="Resources/icons/logo.png" alt="">
             </a>
             <div class="header-items">
@@ -57,7 +57,7 @@
                     </button>
                 </div>
                 <div class="main__links">
-                    <a href="#">About Collin</a>
+                    <a href="About_us.html">About Collin</a>
                     <button class="links-dropdown-button">
                         <img src="Resources/icons/right-arrow.png" alt="dropdown arrow">
                     </button>
@@ -130,34 +130,58 @@
     <div class="location">
         <div class="locations">
             <h2>Our Locations</h2>
-            <ul>
-                <li><a href="#">Allen</a></li>
-                <li><a href="#">Celina</a></li>
-                <li><a href="#">Farmervile</a></li>
-                <li><a href="#">Frisco</a></li>
-                <li><a href="#">iCollin</a></li>
-                <li><a href="#">McKinney</a></li>
-                <li><a href="#">Plano</a></li>
-                <li><a href="#">Wylie</a></li>
-            </ul>
+            <ul id="location-list">
+                <li><a href="#" class="location-link active" data-image="Resources/Locations/location-allen.webp">Allen</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-celina.webp">Celina</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-farmersville.webp">Farmervile</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-frisco.webp">Frisco</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-icollin.webp">iCollin</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-mckinney.webp">McKinney</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-plano.webp">Plano</a></li>
+                <li><a href="#" class="location-link" data-image="Resources/Locations/location-wylie.webp">Wylie</a></li>
+            </ul>  
             <a class="special-link" href="">Explore Our Campuses
                 <img src="Resources/icons/right-down.png" alt="">
             </a>
         </div>
         <div class="locations-detail">
-            <img src="Resources/Locations/location-allen.webp" alt="">
-            <div class="locations-name">
-                <h3>Technical Campus</h3>
+            <div class="image-display-container">
+                <img id="featured-image" src="Resources/images/allen.jpg" alt="Campus Location">
             </div>
+            
             <div class="sublocation">
-                <div class="address">
-                    <p>2550 Bending Branch Way</p>
-                    <p>Allen, TX 75013</p>
+                <div class="locations-name">
+                    <h3>Technical Campus</h3>
                 </div>
-                <div class="phone-number">
-                    <p>Information</p>
-                    <a href="#">972.553.1290</a>
+                <div class="contact-info">
+                    
+                    <div class="address">
+                        <p>2550 Bending Branch Way</p>
+                        <p>Allen, TX 75013</p>
+                    </div>
+                    <div class="phone-number">
+                        <p>Information</p>
+                        <a href="#">972.553.1290</a>
+                    </div>
+                </div> 
+
+                <div class="locations-name">
+                    <h3>Celina Campus</h3>
                 </div>
+                <div class="contact-info">
+                    
+                    <div class="address">
+                        <p>2505 Kinship Parkway</p>
+                        <p>Celina, Texas 75009</p>
+                    </div>
+                    <div class="phone-number">
+                        <p>Information</p>
+                        <a href="#">469.905.3590</a>
+                    </div>
+                </div> 
+
+                
+                
             </div>
             <a href="#" class="btn-more">Learn more about Technical Campus</a>
         </div>
