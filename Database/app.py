@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -26,7 +26,7 @@ def register_page():
         try:
             db.session.add(new_user)
             db.session.commit()
-            return redirect('/')
+            return redirect(url_for('register_page'))
         except:
             return 'Please try enter a valid username'
             
