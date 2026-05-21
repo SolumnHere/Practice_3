@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneLogin</title>
-    <link rel="icon" type="image/x-icon" href="Resources/icons/onelogin_logo.svg">
-    <link rel="stylesheet" href="style/Login.css">
+    <link rel="icon" type="image/x-icon" href="../static/css/image/onelogin_logo.svg">
+    <link rel="stylesheet" href="../static/css/Login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -14,15 +14,20 @@
     <div class="wapper">
         <div class="wapper-content">        
             <div class="main-content">
-                <form action="">
+                <form action="{{ url_for('register_page') }}" method="POST">
                     <div class="input-box">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Username" name="Username">
                         <i class='bx bxs-user'></i>
                     </div>
 
                     <div class="input-box">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" name="Password" required>
                         <i class='bx bxs-lock-alt' ></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" name="Email" required>
+                        <i class='bx bxs-envelope'></i>
                     </div>
 
                     <div class="rememeber-forget">

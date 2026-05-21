@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../Resources/Locations/40b60bc15d77202553fa54a4ba4b98a4d72b99ca.jpg') no-repeat;
+    background: url('../css/image/40b60bc15d77202553fa54a4ba4b98a4d72b99ca.jpg') no-repeat;
 
     min-height: 100vh;
     background-size: cover;
